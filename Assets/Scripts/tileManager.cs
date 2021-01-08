@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class tileManager : MonoBehaviour
 {
+	
 	// Start is called before the first frame update
 	public Dictionary<Vector2Int, int> visitLog = new Dictionary<Vector2Int, int>();
 	void Start()
