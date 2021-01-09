@@ -5043,7 +5043,7 @@ GameObject:
   m_Name: check_out_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &657208556
@@ -6572,7 +6572,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 790411202}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 0.35
   m_Speed: 5
   m_Acceleration: 15
   avoidancePriority: 50
@@ -9299,7 +9299,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1139937858
 MeshCollider:
@@ -12429,8 +12429,8 @@ GameObject:
   m_Name: wall_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1585578716
 MeshCollider:
@@ -13534,8 +13534,8 @@ GameObject:
   m_Name: wall_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1736827899
 MeshCollider:
@@ -17308,6 +17308,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668224882921549342, guid: 7dd173a0feff0e84190275a64c57fbc0,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 7668224882921549342, guid: 7dd173a0feff0e84190275a64c57fbc0,
         type: 3}
