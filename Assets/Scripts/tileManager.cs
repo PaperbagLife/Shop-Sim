@@ -32,6 +32,7 @@ public class tileManager : MonoBehaviour
 
 	}
 	public void onVisit(Vector3 curPos)
+	//Using (x,z) coordinate as blockID, mapping to num of times visited.
 	{
 		Vector2Int blockID = new Vector2Int ((int)curPos[0], (int)curPos[2]);
 		visitLog[blockID] = visitLog[blockID] + 1;

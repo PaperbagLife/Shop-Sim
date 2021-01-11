@@ -11,6 +11,7 @@ public class visit : MonoBehaviour
     {
         manager = transform.parent.gameObject;
         manager.GetComponent<tileManager>().initDict(transform.position);
+
     }
 
     // Update is called once per frame
@@ -25,5 +26,6 @@ public class visit : MonoBehaviour
         // Use position to determine the block ID.
         // Use Tuple of (X, Z) as block ID. can use another representation.
         manager.GetComponent<tileManager>().onVisit(transform.position);
+        other.gameObject.GetComponent<playerMovement>().updateLog(transform.position);
     }
 }
