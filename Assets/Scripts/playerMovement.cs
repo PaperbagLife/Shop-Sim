@@ -16,6 +16,7 @@ public class playerMovement : MonoBehaviour
 	public Camera cam;
 	public Dictionary<Vector2Int, int> selfVisitLog;
 	public ThirdPersonCharacter character;
+	public string playerID;
 	
 	Vector2Int destination;
 	Vector3 move;
@@ -34,6 +35,10 @@ public class playerMovement : MonoBehaviour
 			selfVisitLog.Add(blockID, 0);
 		}
 		//agent.updateRotation = false;
+	}
+	void output()
+	{
+
 	}
 
 
@@ -93,6 +98,7 @@ public class playerMovement : MonoBehaviour
 		if (unvisited.Count == 0)
 		{
 			Debug.Log("No unvisited tiles");
+
 			return true;
 		}
 		destination = unvisited[Random.Range (0, unvisited.Count)];
@@ -115,6 +121,7 @@ public class playerMovement : MonoBehaviour
 		if (unvisited.Count == 0)
 		{
 			Debug.Log("No unvisited tiles");
+			gameObject.GetComponent<Rigidbody>().isKinematic = true;
 			return true;
 		}
 		destination = unvisited[Random.Range (0, unvisited.Count)];
