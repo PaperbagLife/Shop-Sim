@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityStandardAssets.Characters.ThirdPerson;
 
 public class playerMovement : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class playerMovement : MonoBehaviour
 	public GameObject tileManagerObject;
 	public Camera cam;
 	public Dictionary<Vector2Int, int> selfVisitLog;
+	public ThirdPersonCharacter character;
 	
 	Vector2Int destination;
 	Vector3 move;
@@ -31,6 +33,7 @@ public class playerMovement : MonoBehaviour
 			Vector2Int blockID = new Vector2Int ((int)tilePos[0], (int)tilePos[2]);
 			selfVisitLog.Add(blockID, 0);
 		}
+		//agent.updateRotation = false;
 	}
 
 
@@ -56,6 +59,18 @@ public class playerMovement : MonoBehaviour
 				Debug.Log("cur:" + gameObject.transform.position);
 			}
 		}
+		Debug.Log("desi" + agent.desiredVelocity);
+
+		if (agent.remainingDistance > agent.stoppingDistance)
+		{
+			character.Move(agent.desiredVelocity, false, false);
+		}
+		else
+		{
+			Debug.Log("remainDi" + agent.remainingDistance);
+			character.Move(Vector3.zero, false, false);
+		}
+
 	}	
 
 	public void updateLog(Vector3 curPos)

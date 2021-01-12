@@ -22,7 +22,7 @@ public class visit : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Visiting:" + transform.position);
+        // Debug.Log("Visiting:" + transform.position);
         // Use position to determine the block ID.
         // Use Tuple of (X, Z) as block ID. can use another representation.
         manager.GetComponent<tileManager>().onVisit(transform.position);
