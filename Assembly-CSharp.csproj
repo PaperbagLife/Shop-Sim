@@ -62,7 +62,8 @@
      <Compile Include="Assets\Scripts\tileManager.cs" />
      <Compile Include="Assets\Scripts\visit.cs" />
      <None Include="Assets\Log\sample_modeB.txt" />
-     <None Include="Assets\Log\sample_modea.txt" />
+     <None Include="Assets\Log\sample_modeA.txt" />
+     <None Include="Assets\Log\output.txt" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
