@@ -10,12 +10,14 @@ public class visit : MonoBehaviour
     public GameObject manager;
     private string path;
     private bool raised;
+    private GameObject colorTile;
     void Start()
     {
         manager = transform.parent.gameObject;
         manager.GetComponent<tileManager>().initDict(transform.position);
         path = Application.dataPath + "/Log/output.txt";
         raised = false;
+        colorTile = gameObject.transform.GetChild(0).gameObject;
     }
 
     // Update is called once per frame
@@ -38,7 +40,10 @@ public class visit : MonoBehaviour
         string visitString = "Player " + other.gameObject.GetComponent<playerMovement>().playerID + " visited " + getID(transform.position) + "\n";
         File.AppendAllText(path, visitString);
         other.gameObject.GetComponent<playerMovement>().updateLog(transform.position);
-        if (!raised) gameObject.transform.GetChild(0).position += Vector3.up * 0.4f;
+        if (!raised) colorTile.transform.position += Vector3.up * 0.4f;
         raised = true;
+
+        colorTile.GetComponent<Renderer>().material.color += new Color(0.1f, 0, 0);
+
     }
 }
