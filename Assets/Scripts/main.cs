@@ -16,6 +16,7 @@ public class main : MonoBehaviour
 	private string path;
 	private string report;
 	private bool done; 
+
 	void Start()
 	{
 		N = transform.childCount;
@@ -26,6 +27,8 @@ public class main : MonoBehaviour
 		path = Application.dataPath + "/Log/output.txt";
 		report = "Grid count: " + tileManager.transform.childCount + "\n";
 		done = false;
+
+
 	}
 	bool assignNewDestA(GameObject player)
 	//return false if successful, return true if no where to visit
@@ -65,11 +68,14 @@ public class main : MonoBehaviour
 		return;
 	}
 
+
+
 	// Update is called once per frame
 	void Update()
 	{
 		bool finishedAssign = true;
 		bool finishedMoving = true;
+		
 
 		if (Input.GetKeyDown("a") && !modeA && !modeB)
 		{
@@ -123,6 +129,8 @@ public class main : MonoBehaviour
 			Debug.Log("Terminated");
 			output();
 		}
+
+
 
 	}
 

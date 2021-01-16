@@ -64,7 +64,6 @@ public class playerMovement : MonoBehaviour
 				Debug.Log("cur:" + gameObject.transform.position);
 			}
 		}
-		Debug.Log("desi" + agent.desiredVelocity);
 
 		if (agent.remainingDistance > agent.stoppingDistance)
 		{
@@ -72,7 +71,6 @@ public class playerMovement : MonoBehaviour
 		}
 		else
 		{
-			Debug.Log("remainDi" + agent.remainingDistance);
 			character.Move(Vector3.zero, false, false);
 		}
 
