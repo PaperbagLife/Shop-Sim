@@ -5,5 +5,6 @@ The animation will terminate after all tiles are visited.
 You can check the console log for more detailed information on tiles visited.
 You can also click on anywhere on the map to make the first player move to that location.
 You need to drag the main camera on the playermovement script if you want all players to move to cursor location.
+You can switch between 4 cameras (you can add more) by pressing the number keys from 0 to 3.
 
 Unity version 2019.4.16f1

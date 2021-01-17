@@ -34,6 +34,7 @@ public class playerMovement : MonoBehaviour
 			Vector2Int blockID = new Vector2Int ((int)tilePos[0], (int)tilePos[2]);
 			selfVisitLog.Add(blockID, 0);
 		}
+		StartCoroutine(shopperDelay(3));
 		//agent.updateRotation = false;
 	}
 	void output()
@@ -82,6 +83,10 @@ public class playerMovement : MonoBehaviour
 		selfVisitLog[blockID] = selfVisitLog[blockID] + 1;
 	}
 
+	IEnumerator shopperDelay(int t)
+	{
+		yield return new WaitForSeconds(t);
+	}
 
 	public bool moveNextA()
 	{
