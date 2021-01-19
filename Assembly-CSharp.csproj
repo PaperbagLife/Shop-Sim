@@ -57,6 +57,8 @@
   <ItemGroup>
      <Compile Include="Assets\LowMan\Scripts\ThirdPersonCharacter.cs" />
      <Compile Include="Assets\Scripts\cameraManager.cs" />
+     <Compile Include="Assets\Scripts\itemFollow.cs" />
+     <Compile Include="Assets\Scripts\itemManager.cs" />
      <Compile Include="Assets\Scripts\main.cs" />
      <Compile Include="Assets\Scripts\playerMovement.cs" />
      <Compile Include="Assets\Scripts\test.cs" />

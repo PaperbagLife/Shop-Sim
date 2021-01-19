@@ -17,6 +17,8 @@ public class playerMovement : MonoBehaviour
 	public Dictionary<Vector2Int, int> selfVisitLog;
 	public ThirdPersonCharacter character;
 	public string playerID;
+	public int targetID = -1;
+	public GameObject itemMan;
 	
 	Vector2Int destination;
 	Vector3 move;
@@ -34,7 +36,6 @@ public class playerMovement : MonoBehaviour
 			Vector2Int blockID = new Vector2Int ((int)tilePos[0], (int)tilePos[2]);
 			selfVisitLog.Add(blockID, 0);
 		}
-		StartCoroutine(shopperDelay(3));
 		//agent.updateRotation = false;
 	}
 	void output()
@@ -73,19 +74,21 @@ public class playerMovement : MonoBehaviour
 		else
 		{
 			character.Move(Vector3.zero, false, false);
+			grabItem(targetID);
 		}
 
 	}	
+
+	public void grabItem(int itemID)
+	{
+		if (targetID == -1) return;
+		itemMan.GetComponent<itemManager>().takeItem(gameObject, targetID);
+	}
 
 	public void updateLog(Vector3 curPos)
 	{
 		Vector2Int blockID = new Vector2Int ((int)curPos[0], (int)curPos[2]);
 		selfVisitLog[blockID] = selfVisitLog[blockID] + 1;
-	}
-
-	IEnumerator shopperDelay(int t)
-	{
-		yield return new WaitForSeconds(t);
 	}
 
 	public bool moveNextA()
@@ -130,6 +133,11 @@ public class playerMovement : MonoBehaviour
 		destination = unvisited[Random.Range (0, unvisited.Count)];
 		Debug.Log("Destination:" + destination);
 		agent.SetDestination(new Vector3(destination[0]+0.5f, 2, destination[1]-0.5f));
+		return false;
+	}
+	public bool moveNextC()
+	//Function is called to give agent new destination to visit, including if can grab an item.
+	{
 		return false;
 	}
 	
