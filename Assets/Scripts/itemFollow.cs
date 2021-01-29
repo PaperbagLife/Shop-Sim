@@ -17,7 +17,7 @@ public class itemFollow : MonoBehaviour
     {
         if (following)
         {
-        	transform.position = player.transform.position + new Vector3 (0, 1f, 0);
+        	transform.position = player.transform.position;
         }
     }
 

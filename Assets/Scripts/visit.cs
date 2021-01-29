@@ -40,7 +40,7 @@ public class visit : MonoBehaviour
         string visitString = "Player " + other.gameObject.GetComponent<playerMovement>().playerID + " visited " + getID(transform.position) + "\n";
         File.AppendAllText(path, visitString);
         other.gameObject.GetComponent<playerMovement>().updateLog(transform.position);
-        if (!raised) colorTile.transform.position += Vector3.up * 0.32f;
+        if (!raised) colorTile.transform.position += Vector3.up * 0.31f;
         raised = true;
 
         colorTile.GetComponent<Renderer>().material.color += new Color(0.1f, 0, 0);
