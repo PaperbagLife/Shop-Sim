@@ -20,6 +20,12 @@ public class playerMovement : MonoBehaviour
 	public int targetID = -1;
 	public GameObject itemMan;
 	public bool modeC = false;
+	public RootMotion.FinalIK.FullBodyBipedEffector effector;
+	public RootMotion.FinalIK.InteractionObject interactTarget;
+	public bool interacting = false;
+	private Vector3 lastAgentVelocity;
+	private NavMeshPath lastAgentPath;
+	private Vector3 lastAgentDestination;
 
 	
 	Vector2Int destination;
@@ -69,7 +75,11 @@ public class playerMovement : MonoBehaviour
 				Debug.Log("cur:" + gameObject.transform.position);
 			}
 		}
-
+		Debug.Log("navmesh vel" + agent.velocity + interacting);
+		if(interacting){
+			character.Move(Vector3.zero, false, false);
+			return;
+		}
 		if (agent.remainingDistance > agent.stoppingDistance)
 		{
 			character.Move(agent.desiredVelocity, false, false);
@@ -78,13 +88,40 @@ public class playerMovement : MonoBehaviour
 		{
 			character.Move(Vector3.zero, false, false);
 			if (modeC) grabItem(destination);
+			
 		}
+	}
+ 	void pause() {
+	    lastAgentVelocity = agent.velocity;
+	    lastAgentPath = agent.path;        
+	    lastAgentDestination = agent.destination;
+	    agent.velocity = Vector3.zero;
+	    agent.ResetPath();
+	}
+ 	void resume() {
+	    if (agent.destination == lastAgentDestination) {
+	        agent.SetPath(lastAgentPath);
+	    }
+	    else {
+	        agent.SetDestination(lastAgentDestination);
+	    }
+	 
+	    agent.velocity = lastAgentVelocity;
+	}
+		
+	private IEnumerator WaitInteract()
+	{
+		yield return new WaitForSeconds(2.0f);
+		interacting = false;
+		resume();
 
-	}	
-
+	}
 	public void grabItem(Vector2Int dest)
 	{
 		itemMan.GetComponent<itemManager>().takeItem(gameObject, dest);
+		interacting = true;
+		pause();
+		StartCoroutine(WaitInteract());
 	}
 
 	public void updateLog(Vector3 curPos)

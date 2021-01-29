@@ -42,15 +42,11 @@ public class itemManager : MonoBehaviour
 
     public void takeItem(GameObject player, Vector2Int dest)
     {
-    	//Check folloiwng field to know whether its been taken
     	if(dest == Vector2Int.zero) return;
     	Debug.Log("before itemID" + dest);
     	int itemID = blockID2ItemID[dest];
     	if (itemTaken[itemID]) return;
-    	Debug.Log("before cur");
     	GameObject cur = ID2Item[itemID];
-    	Debug.Log("after cur");
-    	if (cur.GetComponent<itemFollow>().following) return;
     	cur.GetComponent<itemFollow>().follow(player);
     	itemTaken[itemID] = true;
     }
