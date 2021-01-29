@@ -1,7 +1,10 @@
 Grid count: 109
-ModeC, grabbing items
-Player 0 visited (1, 13)
-Player 0 visited (1, 12)
-Player 0 visited (1, 11)
-Player 0 visited (1, 10)
-Player 0 visited (2, 10)
+ModeA, all players visit all tiles
+Player 2 visited (7, 8)
+Player 2 visited (7, 7)
+Player 4 visited (2, 2)
+Player 0 visited (2, 14)
+Player 1 visited (12, 3)
+Player 3 visited (10, 9)
+Player 2 visited (6, 8)
+Player 4 visited (2, 1)
