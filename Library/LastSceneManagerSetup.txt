@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/action.unity
+=======
+- path: Assets/Scenes/Get item.unity
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   isLoaded: 1
   isActive: 1
   isSubScene: 0

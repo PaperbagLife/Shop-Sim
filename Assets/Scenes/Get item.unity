@@ -106,7 +106,7 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.2
+    agentRadius: 0.5
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
@@ -114,13 +114,13 @@ NavMeshSettings:
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.06666667
+    cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: b80c37776ac6ad143a8dd874972e153c, type: 2}
+  m_NavMeshData: {fileID: 0}
 --- !u!1001 &754694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -288,13 +288,112 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1314101}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &15763859
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 616974521}
+    m_Modifications:
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763052115685874171, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: playerID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763052115685874172, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 029a9f30e4b29d5469852f938279cdec, type: 3}
+--- !u!4 &15763860 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+    type: 3}
+  m_PrefabInstance: {fileID: 15763859}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &17615250
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4510
+=======
+  m_Name: pb_Mesh-18780
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -541,7 +640,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5402
+=======
+  m_Name: pb_Mesh-19674
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -704,7 +807,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4150
+=======
+  m_Name: pb_Mesh-18280
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -950,7 +1057,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4666
+=======
+  m_Name: pb_Mesh-18936
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1279,7 +1390,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5764
+=======
+  m_Name: pb_Mesh-20284
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1442,7 +1557,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5812
+=======
+  m_Name: pb_Mesh-20332
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1940,7 +2059,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4858
+=======
+  m_Name: pb_Mesh-19128
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2187,7 +2310,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5136
+=======
+  m_Name: pb_Mesh-19408
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2350,7 +2477,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5588
+=======
+  m_Name: pb_Mesh-20140
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2597,7 +2728,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5752
+=======
+  m_Name: pb_Mesh-20272
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2927,7 +3062,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5100
+=======
+  m_Name: pb_Mesh-19372
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3257,7 +3396,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh16666
+=======
+  m_Name: pb_Mesh26520
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3420,7 +3563,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4234
+=======
+  m_Name: pb_Mesh-18364
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3735,7 +3882,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5698
+=======
+  m_Name: pb_Mesh-20218
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4150,7 +4301,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh16016
+=======
+  m_Name: pb_Mesh25870
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4564,7 +4719,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5450
+=======
+  m_Name: pb_Mesh-19722
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4811,7 +4970,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4486
+=======
+  m_Name: pb_Mesh-18756
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5057,7 +5220,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh16164
+=======
+  m_Name: pb_Mesh26018
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5387,7 +5554,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4192
+=======
+  m_Name: pb_Mesh-18322
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5550,7 +5721,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5474
+=======
+  m_Name: pb_Mesh-19746
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5713,7 +5888,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4762
+=======
+  m_Name: pb_Mesh-19032
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6349,13 +6528,112 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0544c2480dfe8fd48ad5796a94a37e57, type: 3}
+--- !u!1001 &296567299
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 616974521}
+    m_Modifications:
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763052115685874171, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: playerID
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763052115685874172, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_Name
+      value: Player (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 029a9f30e4b29d5469852f938279cdec, type: 3}
+--- !u!4 &296567300 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+    type: 3}
+  m_PrefabInstance: {fileID: 296567299}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &310453825
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5112
+=======
+  m_Name: pb_Mesh-19384
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6518,7 +6796,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-6154
+=======
+  m_Name: pb_Mesh-20674
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6681,7 +6963,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5390
+=======
+  m_Name: pb_Mesh-19662
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7177,7 +7463,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5992
+=======
+  m_Name: pb_Mesh-20512
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7589,7 +7879,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4342
+=======
+  m_Name: pb_Mesh-18612
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7836,7 +8130,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5438
+=======
+  m_Name: pb_Mesh-19710
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8082,7 +8380,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4846
+=======
+  m_Name: pb_Mesh-19116
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8245,7 +8547,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4828
+=======
+  m_Name: pb_Mesh-19098
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8408,7 +8714,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4912
+=======
+  m_Name: pb_Mesh-19182
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8654,7 +8964,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4702
+=======
+  m_Name: pb_Mesh-18972
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8891,7 +9205,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4552
+=======
+  m_Name: pb_Mesh-18822
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9137,7 +9455,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4618
+=======
+  m_Name: pb_Mesh-18888
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9384,7 +9706,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5516
+=======
+  m_Name: pb_Mesh-19788
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10274,7 +10600,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh16898
+=======
+  m_Name: pb_Mesh26746
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11142,7 +11472,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-6136
+=======
+  m_Name: pb_Mesh-20656
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11388,7 +11722,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4036
+=======
+  m_Name: pb_Mesh-18166
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11634,7 +11972,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4312
+=======
+  m_Name: pb_Mesh-18582
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11797,7 +12139,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4204
+=======
+  m_Name: pb_Mesh-18334
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12209,7 +12555,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4270
+=======
+  m_Name: pb_Mesh-18400
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12467,7 +12817,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4252
+=======
+  m_Name: pb_Mesh-18382
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12630,7 +12984,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-6052
+=======
+  m_Name: pb_Mesh-20572
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13689,7 +14047,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-6172
+=======
+  m_Name: pb_Mesh-20692
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13852,7 +14214,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4678
+=======
+  m_Name: pb_Mesh-18948
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -14126,7 +14492,6 @@ MonoBehaviour:
   tileManager: {fileID: 182991985}
   modeA: 0
   modeB: 0
-  modeC: 0
 --- !u!4 &616974521
 Transform:
   m_ObjectHideFlags: 0
@@ -14139,6 +14504,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1281546264}
+  - {fileID: 15763860}
+  - {fileID: 1501475160}
+  - {fileID: 1504206901}
+  - {fileID: 296567300}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14232,7 +14601,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4084
+=======
+  m_Name: pb_Mesh-18214
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -14789,7 +15162,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4986
+=======
+  m_Name: pb_Mesh-19258
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15035,7 +15412,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5166
+=======
+  m_Name: pb_Mesh-19438
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15366,7 +15747,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5674
+=======
+  m_Name: pb_Mesh-20194
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15612,7 +15997,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5414
+=======
+  m_Name: pb_Mesh-19686
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15942,7 +16331,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4930
+=======
+  m_Name: pb_Mesh-19200
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16105,7 +16498,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4132
+=======
+  m_Name: pb_Mesh-18262
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16351,7 +16748,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5070
+=======
+  m_Name: pb_Mesh-19342
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16682,7 +17083,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4120
+=======
+  m_Name: pb_Mesh-18250
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17407,7 +17812,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh16736
+=======
+  m_Name: pb_Mesh26586
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17653,7 +18062,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5914
+=======
+  m_Name: pb_Mesh-20434
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17900,7 +18313,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4168
+=======
+  m_Name: pb_Mesh-18298
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -18147,7 +18564,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh16220
+=======
+  m_Name: pb_Mesh26074
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -18726,7 +19147,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh16772
+=======
+  m_Name: pb_Mesh26622
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -18889,7 +19314,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5854
+=======
+  m_Name: pb_Mesh-20374
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -18898,10 +19327,10 @@ Mesh:
     topology: 0
     baseVertex: 0
     firstVertex: 0
-    vertexCount: 9
+    vertexCount: 16
     localAABB:
-      m_Center: {x: 0.5, y: 0, z: 0.5}
-      m_Extent: {x: 0.5, y: 0, z: 0.5}
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
   m_Shapes:
     vertices: []
     shapes: []
@@ -18918,10 +19347,10 @@ Mesh:
   m_KeepVertices: 1
   m_KeepIndices: 1
   m_IndexFormat: 0
-  m_IndexBuffer: 000001000200010003000200010004000300040005000300020003000600030007000600030005000700050008000700
+  m_IndexBuffer: 000001000200010003000200040005000600050007000600080009000a0009000b000a000c000d000e000d000f000e00
   m_VertexData:
     serializedVersion: 3
-    m_VertexCount: 9
+    m_VertexCount: 16
     m_Channels:
     - stream: 0
       offset: 0
@@ -18979,8 +19408,8 @@ Mesh:
       offset: 0
       format: 0
       dimension: 0
-    m_DataSize: 432
-    _typelessdata: 000000000000000000000000000000000000803f000000000000803f0000000000000000000080bf000000000000000000000000000000000000003f000000000000803f000000000000803f0000000000000000000080bf000000000000003f0000003f0000000000000000000000000000803f000000000000803f0000000000000000000080bf0000003f000000000000003f000000000000003f000000000000803f000000000000803f0000000000000000000080bf0000003f0000003f00000000000000000000803f000000000000803f000000000000803f0000000000000000000080bf000000000000803f0000003f000000000000803f000000000000803f000000000000803f0000000000000000000080bf0000003f0000803f0000803f0000000000000000000000000000803f000000000000803f0000000000000000000080bf0000803f000000000000803f000000000000003f000000000000803f000000000000803f0000000000000000000080bf0000803f0000003f0000803f000000000000803f000000000000803f000000000000803f0000000000000000000080bf0000803f0000803f
+    m_DataSize: 768
+    _typelessdata: 000000000000000000000000000000000000803f000000000000803f0000000000000000000080bf000000000000000000000000000000000000003f000000000000803f000000000000803f0000000000000000000080bf000000000000003f0000003f0000000000000000000000000000803f000000000000803f0000000000000000000080bf0000003f000000000000003f000000000000003f000000000000803f000000000000803f0000000000000000000080bf0000003f0000003f00000000000000000000003f000000000000803f000000000000803f0000000000000000000080bf000000000000003f00000000000000000000803f000000000000803f000000000000803f0000000000000000000080bf000000000000803f0000003f000000000000003f000000000000803f000000000000803f0000000000000000000080bf0000003f0000003f0000003f000000000000803f000000000000803f000000000000803f0000000000000000000080bf0000003f0000803f0000003f0000000000000000000000000000803f000000000000803f0000000000000000000080bf0000003f000000000000003f000000000000003f000000000000803f000000000000803f0000000000000000000080bf0000003f0000003f0000803f0000000000000000000000000000803f000000000000803f0000000000000000000080bf0000803f000000000000803f000000000000003f000000000000803f000000000000803f0000000000000000000080bf0000803f0000003f0000003f000000000000003f000000000000803f000000000000803f0000000000000000000080bf0000003f0000003f0000003f000000000000803f000000000000803f000000000000803f0000000000000000000080bf0000003f0000803f0000803f000000000000003f000000000000803f000000000000803f0000000000000000000080bf0000803f0000003f0000803f000000000000803f000000000000803f000000000000803f0000000000000000000080bf0000803f0000803f
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -19136,7 +19565,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5618
+=======
+  m_Name: pb_Mesh-20170
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -20546,7 +20979,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4786
+=======
+  m_Name: pb_Mesh-19056
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -20709,7 +21146,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5878
+=======
+  m_Name: pb_Mesh-20398
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21267,7 +21708,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4942
+=======
+  m_Name: pb_Mesh-19212
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21764,7 +22209,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh15928
+=======
+  m_Name: pb_Mesh25778
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21775,8 +22224,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 24
     localAABB:
-      m_Center: {x: 0.5, y: 0.5, z: -2.5}
-      m_Extent: {x: 0.5, y: 0.5, z: 2.5}
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
   m_Shapes:
     vertices: []
     shapes: []
@@ -22271,7 +22720,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4222
+=======
+  m_Name: pb_Mesh-18352
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -22434,7 +22887,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5492
+=======
+  m_Name: pb_Mesh-19764
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -22597,7 +23054,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh16338
+=======
+  m_Name: pb_Mesh26192
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -22844,7 +23305,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh16862
+=======
+  m_Name: pb_Mesh26710
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23353,7 +23818,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5630
+=======
+  m_Name: pb_Mesh-20182
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -24019,7 +24488,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4066
+=======
+  m_Name: pb_Mesh-18196
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -24182,7 +24655,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4528
+=======
+  m_Name: pb_Mesh-18798
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -24428,7 +24905,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4630
+=======
+  m_Name: pb_Mesh-18900
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -24591,7 +25072,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5366
+=======
+  m_Name: pb_Mesh-19638
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25173,7 +25658,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5148
+=======
+  m_Name: pb_Mesh-19420
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -26398,7 +26887,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-6100
+=======
+  m_Name: pb_Mesh-20620
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -26561,7 +27054,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4462
+=======
+  m_Name: pb_Mesh-18732
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -26724,7 +27221,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5528
+=======
+  m_Name: pb_Mesh-19800
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -27148,7 +27649,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5944
+=======
+  m_Name: pb_Mesh-20464
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -27157,10 +27662,10 @@ Mesh:
     topology: 0
     baseVertex: 0
     firstVertex: 0
-    vertexCount: 9
+    vertexCount: 16
     localAABB:
-      m_Center: {x: 0.5, y: 0, z: 0.5}
-      m_Extent: {x: 0.5, y: 0, z: 0.5}
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
   m_Shapes:
     vertices: []
     shapes: []
@@ -27177,10 +27682,10 @@ Mesh:
   m_KeepVertices: 1
   m_KeepIndices: 1
   m_IndexFormat: 0
-  m_IndexBuffer: 000001000200010003000200010004000300040005000300020003000600030007000600030005000700050008000700
+  m_IndexBuffer: 000001000200010003000200040005000600050007000600080009000a0009000b000a000c000d000e000d000f000e00
   m_VertexData:
     serializedVersion: 3
-    m_VertexCount: 9
+    m_VertexCount: 16
     m_Channels:
     - stream: 0
       offset: 0
@@ -27238,8 +27743,8 @@ Mesh:
       offset: 0
       format: 0
       dimension: 0
-    m_DataSize: 432
-    _typelessdata: 000000000000000000000000000000000000803f000000000000803f0000000000000000000080bf000000000000000000000000000000000000003f000000000000803f000000000000803f0000000000000000000080bf000000000000003f0000003f0000000000000000000000000000803f000000000000803f0000000000000000000080bf0000003f000000000000003f000000000000003f000000000000803f000000000000803f0000000000000000000080bf0000003f0000003f00000000000000000000803f000000000000803f000000000000803f0000000000000000000080bf000000000000803f0000003f000000000000803f000000000000803f000000000000803f0000000000000000000080bf0000003f0000803f0000803f0000000000000000000000000000803f000000000000803f0000000000000000000080bf0000803f000000000000803f000000000000003f000000000000803f000000000000803f0000000000000000000080bf0000803f0000003f0000803f000000000000803f000000000000803f000000000000803f0000000000000000000080bf0000803f0000803f
+    m_DataSize: 768
+    _typelessdata: 000000000000000000000000000000000000803f000000000000803f0000000000000000000080bf000000000000000000000000000000000000003f000000000000803f000000000000803f0000000000000000000080bf000000000000003f0000003f0000000000000000000000000000803f000000000000803f0000000000000000000080bf0000003f000000000000003f000000000000003f000000000000803f000000000000803f0000000000000000000080bf0000003f0000003f00000000000000000000003f000000000000803f000000000000803f0000000000000000000080bf000000000000003f00000000000000000000803f000000000000803f000000000000803f0000000000000000000080bf000000000000803f0000003f000000000000003f000000000000803f000000000000803f0000000000000000000080bf0000003f0000003f0000003f000000000000803f000000000000803f000000000000803f0000000000000000000080bf0000003f0000803f0000003f0000000000000000000000000000803f000000000000803f0000000000000000000080bf0000003f000000000000003f000000000000003f000000000000803f000000000000803f0000000000000000000080bf0000003f0000003f0000803f0000000000000000000000000000803f000000000000803f0000000000000000000080bf0000803f000000000000803f000000000000003f000000000000803f000000000000803f0000000000000000000080bf0000803f0000003f0000003f000000000000003f000000000000803f000000000000803f0000000000000000000080bf0000003f0000003f0000003f000000000000803f000000000000803f000000000000803f0000000000000000000080bf0000003f0000803f0000803f000000000000003f000000000000803f000000000000803f0000000000000000000080bf0000803f0000003f0000803f000000000000803f000000000000803f000000000000803f0000000000000000000080bf0000803f0000803f
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -27311,7 +27816,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4810
+=======
+  m_Name: pb_Mesh-19080
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -27916,7 +28425,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5794
+=======
+  m_Name: pb_Mesh-20314
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -28246,7 +28759,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5902
+=======
+  m_Name: pb_Mesh-20422
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -28409,7 +28926,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5710
+=======
+  m_Name: pb_Mesh-20230
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -28418,10 +28939,10 @@ Mesh:
     topology: 0
     baseVertex: 0
     firstVertex: 0
-    vertexCount: 9
+    vertexCount: 16
     localAABB:
-      m_Center: {x: 0.5, y: 0, z: 0.5}
-      m_Extent: {x: 0.5, y: 0, z: 0.5}
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
   m_Shapes:
     vertices: []
     shapes: []
@@ -28438,10 +28959,10 @@ Mesh:
   m_KeepVertices: 1
   m_KeepIndices: 1
   m_IndexFormat: 0
-  m_IndexBuffer: 000001000200010003000200010004000300040005000300020003000600030007000600030005000700050008000700
+  m_IndexBuffer: 000001000200010003000200040005000600050007000600080009000a0009000b000a000c000d000e000d000f000e00
   m_VertexData:
     serializedVersion: 3
-    m_VertexCount: 9
+    m_VertexCount: 16
     m_Channels:
     - stream: 0
       offset: 0
@@ -28499,8 +29020,8 @@ Mesh:
       offset: 0
       format: 0
       dimension: 0
-    m_DataSize: 432
-    _typelessdata: 000000000000000000000000000000000000803f000000000000803f0000000000000000000080bf000000000000000000000000000000000000003f000000000000803f000000000000803f0000000000000000000080bf000000000000003f0000003f0000000000000000000000000000803f000000000000803f0000000000000000000080bf0000003f000000000000003f000000000000003f000000000000803f000000000000803f0000000000000000000080bf0000003f0000003f00000000000000000000803f000000000000803f000000000000803f0000000000000000000080bf000000000000803f0000003f000000000000803f000000000000803f000000000000803f0000000000000000000080bf0000003f0000803f0000803f0000000000000000000000000000803f000000000000803f0000000000000000000080bf0000803f000000000000803f000000000000003f000000000000803f000000000000803f0000000000000000000080bf0000803f0000003f0000803f000000000000803f000000000000803f000000000000803f0000000000000000000080bf0000803f0000803f
+    m_DataSize: 768
+    _typelessdata: 000000000000000000000000000000000000803f000000000000803f0000000000000000000080bf000000000000000000000000000000000000003f000000000000803f000000000000803f0000000000000000000080bf000000000000003f0000003f0000000000000000000000000000803f000000000000803f0000000000000000000080bf0000003f000000000000003f000000000000003f000000000000803f000000000000803f0000000000000000000080bf0000003f0000003f00000000000000000000003f000000000000803f000000000000803f0000000000000000000080bf000000000000003f00000000000000000000803f000000000000803f000000000000803f0000000000000000000080bf000000000000803f0000003f000000000000003f000000000000803f000000000000803f0000000000000000000080bf0000003f0000003f0000003f000000000000803f000000000000803f000000000000803f0000000000000000000080bf0000003f0000803f0000003f0000000000000000000000000000803f000000000000803f0000000000000000000080bf0000003f000000000000003f000000000000003f000000000000803f000000000000803f0000000000000000000080bf0000003f0000003f0000803f0000000000000000000000000000803f000000000000803f0000000000000000000080bf0000803f000000000000803f000000000000003f000000000000803f000000000000803f0000000000000000000080bf0000803f0000003f0000003f000000000000003f000000000000803f000000000000803f0000000000000000000080bf0000003f0000003f0000003f000000000000803f000000000000803f000000000000803f0000000000000000000080bf0000003f0000803f0000803f000000000000003f000000000000803f000000000000803f0000000000000000000080bf0000803f0000003f0000803f000000000000803f000000000000803f000000000000803f0000000000000000000080bf0000803f0000803f
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -28655,7 +29176,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5034
+=======
+  m_Name: pb_Mesh-19306
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -28986,7 +29511,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh16048
+=======
+  m_Name: pb_Mesh25902
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29233,7 +29762,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5932
+=======
+  m_Name: pb_Mesh-20452
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29724,33 +30257,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0544c2480dfe8fd48ad5796a94a37e57, type: 3}
---- !u!1 &1405217176 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 419f9ea0a607b3742a9f5cdfadd15ffd,
-    type: 3}
-  m_PrefabInstance: {fileID: 1676600821}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1405217177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1405217176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d171802ee0275054090689fb5a90f49c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  following: 0
 --- !u!43 &1413670509
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5830
+=======
+  m_Name: pb_Mesh-20350
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29913,7 +30430,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-6004
+=======
+  m_Name: pb_Mesh-20524
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -30159,7 +30680,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5022
+=======
+  m_Name: pb_Mesh-19294
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -30618,7 +31143,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4282
+=======
+  m_Name: pb_Mesh-18412
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -30865,7 +31394,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5776
+=======
+  m_Name: pb_Mesh-20296
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -31028,7 +31561,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5956
+=======
+  m_Name: pb_Mesh-20476
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -31191,7 +31728,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5968
+=======
+  m_Name: pb_Mesh-20488
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -31682,6 +32223,196 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0544c2480dfe8fd48ad5796a94a37e57, type: 3}
+--- !u!1001 &1501475159
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 616974521}
+    m_Modifications:
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763052115685874171, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: playerID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763052115685874172, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_Name
+      value: Player (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 029a9f30e4b29d5469852f938279cdec, type: 3}
+--- !u!4 &1501475160 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+    type: 3}
+  m_PrefabInstance: {fileID: 1501475159}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1504206900
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 616974521}
+    m_Modifications:
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763052115685874171, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: playerID
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763052115685874172, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_Name
+      value: Player (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 029a9f30e4b29d5469852f938279cdec, type: 3}
+--- !u!4 &1504206901 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
+    type: 3}
+  m_PrefabInstance: {fileID: 1504206900}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1505862470
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32250,7 +32981,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4606
+=======
+  m_Name: pb_Mesh-18876
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -32496,7 +33231,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5842
+=======
+  m_Name: pb_Mesh-20362
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -33698,7 +34437,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5082
+=======
+  m_Name: pb_Mesh-19354
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -34029,7 +34772,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4108
+=======
+  m_Name: pb_Mesh-18238
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -34192,7 +34939,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh16654
+=======
+  m_Name: pb_Mesh26508
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -34355,7 +35106,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh16466
+=======
+  m_Name: pb_Mesh26316
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -34518,7 +35273,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-6016
+=======
+  m_Name: pb_Mesh-20536
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -34681,7 +35440,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh16064
+=======
+  m_Name: pb_Mesh25918
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -34919,7 +35682,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-6064
+=======
+  m_Name: pb_Mesh-20584
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -35082,7 +35849,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-6034
+=======
+  m_Name: pb_Mesh-20554
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -35329,7 +36100,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5686
+=======
+  m_Name: pb_Mesh-20206
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -35576,7 +36351,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4648
+=======
+  m_Name: pb_Mesh-18918
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -35739,7 +36518,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5010
+=======
+  m_Name: pb_Mesh-19282
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -35986,7 +36769,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh16130
+=======
+  m_Name: pb_Mesh25984
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -36963,7 +37750,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4998
+=======
+  m_Name: pb_Mesh-19270
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -37126,7 +37917,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh16792
+=======
+  m_Name: pb_Mesh26642
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -38259,7 +39054,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4180
+=======
+  m_Name: pb_Mesh-18310
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -38763,7 +39562,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5980
+=======
+  m_Name: pb_Mesh-20500
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -38926,7 +39729,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4870
+=======
+  m_Name: pb_Mesh-19140
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -39423,7 +40230,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4726
+=======
+  m_Name: pb_Mesh-18996
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -39586,7 +40397,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4096
+=======
+  m_Name: pb_Mesh-18226
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -40086,7 +40901,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1935305898}
-  - component: {fileID: 1935305899}
   m_Layer: 0
   m_Name: itemManager
   m_TagString: Untagged
@@ -40114,18 +40928,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1935305899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935305897}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a1b8ccf3d8bf1d48ac2f8285d4c69f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1949915798
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40216,7 +41018,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4588
+=======
+  m_Name: pb_Mesh-18858
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -41285,7 +42091,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5540
+=======
+  m_Name: pb_Mesh-20092
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -41700,7 +42510,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4372
+=======
+  m_Name: pb_Mesh-18642
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -41863,7 +42677,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4390
+=======
+  m_Name: pb_Mesh-18660
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -42420,7 +43238,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5058
+=======
+  m_Name: pb_Mesh-19330
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -42583,7 +43405,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5606
+=======
+  m_Name: pb_Mesh-20158
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -42746,7 +43572,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5740
+=======
+  m_Name: pb_Mesh-20260
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -42909,7 +43739,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4564
+=======
+  m_Name: pb_Mesh-18834
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -43156,7 +43990,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5728
+=======
+  m_Name: pb_Mesh-20248
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -43319,7 +44157,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-5552
+=======
+  m_Name: pb_Mesh-20104
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -43482,7 +44324,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh16624
+=======
+  m_Name: pb_Mesh26478
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -44791,7 +45637,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4018
+=======
+  m_Name: pb_Mesh-18008
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -45455,7 +46305,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh-4474
+=======
+  m_Name: pb_Mesh-18744
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

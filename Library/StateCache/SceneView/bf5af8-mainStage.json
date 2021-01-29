@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":5.008286476135254,"y":0.32940277457237246,"z":7.252921104431152},"rotation":{"x":-0.1610100418329239,"y":0.4534289538860321,"z":-0.0818614512681961,"w":-0.8735543489456177},"size":6.268414497375488,"orthographic":true}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":2.4549014568328859,"y":0.27363356947898867,"z":4.173925876617432},"rotation":{"x":-0.3125714063644409,"y":0.3304729163646698,"z":-0.11409154534339905,"w":-0.8838785886764526},"size":3.886281967163086,"orthographic":true}
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.

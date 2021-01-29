@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 392}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -45,10 +45,15 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 771
+<<<<<<< HEAD
   m_MinSize: {x: 679, y: 342}
   m_MaxSize: {x: 12004, y: 8042}
+=======
+  m_MinSize: {x: 677, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   vertical: 0
-  controlID: 59
+  controlID: 122
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -112,7 +117,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -121,14 +126,20 @@ MonoBehaviour:
     y: 500
     width: 1228
     height: 271
+<<<<<<< HEAD
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
+=======
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 15}
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   m_Panes:
   - {fileID: 15}
   - {fileID: 20}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -217,10 +228,15 @@ MonoBehaviour:
     y: 0
     width: 1228
     height: 771
+<<<<<<< HEAD
   m_MinSize: {x: 403, y: 342}
   m_MaxSize: {x: 8003, y: 8042}
+=======
+  m_MinSize: {x: 402, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   vertical: 1
-  controlID: 60
+  controlID: 126
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,7 +261,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 61
+  controlID: 60
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -429,20 +445,35 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Plugins/RootMotion/FinalIK/IK Jobs/CCDIKJ
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/Plugins/RootMotion/FinalIK/IK Jobs/CCDIKJ
+=======
+    - Assets/Scripts
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Scripts
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\17814\Documents\GitHub\Shop Sim
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 202}
     m_SelectedIDs: 30400000
     m_LastClickedID: 16432
     m_ExpandedIDs: 00000000e03f0000e23f0000e43f0000e63f0000e83f0000ea3f0000ec3f0000ee3f00001240000000ca9a3b
+=======
+    scrollPos: {x: 0, y: 46}
+    m_SelectedIDs: 9e3d0000
+    m_LastClickedID: 15774
+    m_ExpandedIDs: 00000000803d0000823d0000843d0000863d0000883d000000ca9a3b
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -470,7 +501,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000e03f0000e23f0000e43f0000e63f0000e83f0000ea3f0000ec3f0000ee3f0000
+=======
+    m_ExpandedIDs: 00000000803d0000823d0000843d0000863d0000883d0000
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -497,7 +532,11 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+<<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 0
+=======
+    m_HadKeyboardFocusLastEvent: 1
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
     m_ExpandedInstanceIDs: c6230000000000003c3e0000b23d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -592,24 +631,31 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
+<<<<<<< HEAD
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: ecf9ffff
+=======
+      scrollPos: {x: 0, y: 1798}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: aab9ffff2ac4ffffe4ceffffc2d9ffff02ebffffdceeffff66fbffff80640000946500003e67000042680000
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: (1,2)
+        m_OriginalName: (1,2)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -18912
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -655,9 +701,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 5.0082865, y: 0.32940277, z: 7.252921}
     speed: 2
     m_Value: {x: 5.0082865, y: 0.32940277, z: 7.252921}
+=======
+    m_Target: {x: 2.4549015, y: 0.27363357, z: 4.173926}
+    speed: 2
+    m_Value: {x: 2.4549015, y: 0.27363357, z: 4.173926}
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -703,6 +755,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: -0.16101004, y: 0.45342895, z: -0.08186145, w: -0.87355435}
     speed: 2
     m_Value: {x: -0.16101004, y: 0.45342895, z: -0.08186145, w: -0.87355435}
@@ -710,6 +763,15 @@ MonoBehaviour:
     m_Target: 6.2684145
     speed: 2
     m_Value: 6.2684145
+=======
+    m_Target: {x: -0.3125714, y: 0.33047292, z: -0.114091545, w: -0.8838786}
+    speed: 2
+    m_Value: {x: -0.31238848, y: 0.33027953, z: -0.11402478, w: -0.88336134}
+  m_Size:
+    m_Target: 3.886282
+    speed: 2
+    m_Value: 3.886282
+>>>>>>> parent of 39e2e42... Added modeC in a separate scene.
   m_Ortho:
     m_Target: 1
     speed: 2

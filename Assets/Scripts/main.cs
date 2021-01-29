@@ -12,7 +12,6 @@ public class main : MonoBehaviour
 	public GameObject tileManager;
 	public bool modeA = false;
 	public bool modeB = false;
-	public bool modeC = false;
 	private NavMeshAgent agent;
 	private string path;
 	private string report;
@@ -41,11 +40,6 @@ public class main : MonoBehaviour
 	{
 		//Using the dictionary from tileManager
 		return player.GetComponent<playerMovement>().moveNextB();
-	}
-
-	bool assignNewDestC(GameObject player)
-	{
-		return player.GetComponent<playerMovement>().moveNextC();
 	}
 
 	void output()
@@ -83,7 +77,7 @@ public class main : MonoBehaviour
 		bool finishedMoving = true;
 		
 
-		if (Input.GetKeyDown("a") && !modeA && !modeB && !modeC)
+		if (Input.GetKeyDown("a") && !modeA && !modeB)
 		{
 			Debug.Log("Type A: All players visit all tiles");
 			modeA = true;
@@ -91,7 +85,7 @@ public class main : MonoBehaviour
 			File.WriteAllText(path, report);
 			File.AppendAllText(path, "ModeA, all players visit all tiles\n");
 		}
-		if (Input.GetKeyDown("b") && !modeA && !modeB && !modeC)
+		if (Input.GetKeyDown("b") && !modeA && !modeB)
 		{
 			Debug.Log("Type B: players collectively visit all tiles");
 			modeB = true;
@@ -99,20 +93,11 @@ public class main : MonoBehaviour
 			File.WriteAllText(path, report);
 			File.AppendAllText(path, "ModeB, collectively visit all tiles\n");
 		}
-
-		if (Input.GetKeyDown("c") && !modeA && !modeB && !modeC)
+		if (Input.GetKeyDown("f"))
 		{
-			Debug.Log("Type C: grabbing all items on the wall");
-			modeC = true;
-			foreach(GameObject player in players)
-			{
-				player.GetComponent<playerMovement>().modeC = true;
-			}
-			// here we use dictionary in tileManager.
-			File.WriteAllText(path, report);
-			File.AppendAllText(path, "ModeC, grabbing items\n");
+			output();
 		}
-		if (!modeA && !modeB && !modeC)
+		if (!modeA && !modeB)
 		{
 			return;
 		}
@@ -130,10 +115,6 @@ public class main : MonoBehaviour
 				if(modeB)
 				{
 					finishedAssign = assignNewDestB(player) && finishedAssign;
-				}
-				if(modeC)
-				{
-					finishedAssign = assignNewDestC(player) && finishedAssign;
 				}
 			}
 			else 

@@ -19,8 +19,6 @@ public class playerMovement : MonoBehaviour
 	public string playerID;
 	public int targetID = -1;
 	public GameObject itemMan;
-	public bool modeC = false;
-
 	
 	Vector2Int destination;
 	Vector3 move;
@@ -39,7 +37,6 @@ public class playerMovement : MonoBehaviour
 			selfVisitLog.Add(blockID, 0);
 		}
 		//agent.updateRotation = false;
-		itemMan = GameObject.Find("itemManager");
 	}
 	void output()
 	{
@@ -77,14 +74,15 @@ public class playerMovement : MonoBehaviour
 		else
 		{
 			character.Move(Vector3.zero, false, false);
-			if (modeC) grabItem(destination);
+			grabItem(targetID);
 		}
 
 	}	
 
-	public void grabItem(Vector2Int dest)
+	public void grabItem(int itemID)
 	{
-		itemMan.GetComponent<itemManager>().takeItem(gameObject, dest);
+		if (targetID == -1) return;
+		itemMan.GetComponent<itemManager>().takeItem(gameObject, targetID);
 	}
 
 	public void updateLog(Vector3 curPos)
@@ -140,25 +138,6 @@ public class playerMovement : MonoBehaviour
 	public bool moveNextC()
 	//Function is called to give agent new destination to visit, including if can grab an item.
 	{
-		List<Vector2Int> unvisited = new List<Vector2Int>();
-		Dictionary<int, bool> itemTaken = itemMan.GetComponent<itemManager>().itemTaken;
-		Dictionary<int, Vector2Int> itemID2blockID = itemMan.GetComponent<itemManager>().itemID2blockID;
-		foreach(var item in itemTaken)
-		{
-			if (item.Value == false) 
-			{
-				unvisited.Add(itemID2blockID[item.Key]);
-			}
-		}
-		if (unvisited.Count == 0)
-		{
-			Debug.Log("No unvisited tiles");
-			gameObject.GetComponent<Rigidbody>().isKinematic = true;
-			return true;
-		}
-		destination = unvisited[Random.Range (0, unvisited.Count)];
-		Debug.Log("Destination:" + destination);
-		agent.SetDestination(new Vector3(destination[0]+0.5f, 2, destination[1]-0.5f));
 		return false;
 	}
 	
