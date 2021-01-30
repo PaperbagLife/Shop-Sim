@@ -7,6 +7,7 @@ public class itemFollow : MonoBehaviour
     // Start is called before the first frame update
     public GameObject player;
     public bool following = false;
+    public bool started = false;
     void Start()
     {
         
@@ -17,8 +18,18 @@ public class itemFollow : MonoBehaviour
     {
         if (following)
         {
-        	transform.position = player.transform.position;
+        	StartCoroutine(delayedFollow());
         }
+        if (started)
+        {
+            transform.position = player.transform.position;
+        }
+    }
+
+    private IEnumerator delayedFollow()
+    {
+        yield return new WaitForSeconds(2.0f);
+        started = true;
     }
 
     public void follow(GameObject playerToFollow)

@@ -49,5 +49,6 @@ public class itemManager : MonoBehaviour
     	GameObject cur = ID2Item[itemID];
     	cur.GetComponent<itemFollow>().follow(player);
     	itemTaken[itemID] = true;
+        player.GetComponent<playerMovement>().interactTarget = cur.GetComponent<RootMotion.FinalIK.InteractionObject>();
     }
 }

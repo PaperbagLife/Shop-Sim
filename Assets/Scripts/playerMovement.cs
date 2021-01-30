@@ -78,7 +78,7 @@ public class playerMovement : MonoBehaviour
 		Debug.Log("navmesh vel" + agent.velocity + interacting);
 		if(interacting){
 			character.Move(Vector3.zero, false, false);
-			pause();
+			interact();
 			return;
 		}
 		if (agent.remainingDistance > agent.stoppingDistance)
@@ -92,23 +92,14 @@ public class playerMovement : MonoBehaviour
 			
 		}
 	}
- 	void pause() {
+ 	void interact() {
 	    lastAgentVelocity = agent.velocity;
 	    lastAgentPath = agent.path;        
 	    lastAgentDestination = agent.destination;
 	    agent.velocity = Vector3.zero;
 	    agent.ResetPath();
 	}
- 	void resume() {
-	    if (agent.destination == lastAgentDestination) {
-	        agent.SetPath(lastAgentPath);
-	    }
-	    else {
-	        agent.SetDestination(lastAgentDestination);
-	    }
-	 
-	    agent.velocity = lastAgentVelocity;
-	}
+ 	
 		
 	private IEnumerator WaitInteract()
 	{
@@ -120,6 +111,7 @@ public class playerMovement : MonoBehaviour
 	{
 		itemMan.GetComponent<itemManager>().takeItem(gameObject, dest);
 		interacting = true;
+		gameObject.GetComponent<RootMotion.FinalIK.InteractionSystem>().StartInteraction(effector, interactTarget, false);
 		StartCoroutine(WaitInteract());
 	}
 

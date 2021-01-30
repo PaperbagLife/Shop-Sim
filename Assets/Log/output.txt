@@ -12,6 +12,7 @@ Player 0 visited (1, 5)
 Player 0 visited (1, 4)
 Player 0 visited (1, 3)
 Player 0 visited (1, 2)
+Player 0 visited (1, 3)
 Terminated
  Overall Summary
 BlockID: (8, 3), Visited:0 times
@@ -46,7 +47,7 @@ BlockID: (4, 12), Visited:0 times
 BlockID: (4, 10), Visited:0 times
 BlockID: (12, 10), Visited:0 times
 BlockID: (6, 8), Visited:0 times
-BlockID: (1, 3), Visited:1 times
+BlockID: (1, 3), Visited:2 times
 BlockID: (12, 1), Visited:0 times
 BlockID: (8, 1), Visited:0 times
 BlockID: (5, 8), Visited:0 times
@@ -127,7 +128,7 @@ Summary for each player:
 Player 0:
 BlockID: (1, 1), Visited:0 times
 BlockID: (1, 2), Visited:1 times
-BlockID: (1, 3), Visited:1 times
+BlockID: (1, 3), Visited:2 times
 BlockID: (1, 4), Visited:1 times
 BlockID: (1, 5), Visited:1 times
 BlockID: (1, 6), Visited:1 times
