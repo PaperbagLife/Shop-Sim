@@ -78,6 +78,7 @@ public class playerMovement : MonoBehaviour
 		Debug.Log("navmesh vel" + agent.velocity + interacting);
 		if(interacting){
 			character.Move(Vector3.zero, false, false);
+			pause();
 			return;
 		}
 		if (agent.remainingDistance > agent.stoppingDistance)
@@ -113,14 +114,12 @@ public class playerMovement : MonoBehaviour
 	{
 		yield return new WaitForSeconds(2.0f);
 		interacting = false;
-		resume();
 
 	}
 	public void grabItem(Vector2Int dest)
 	{
 		itemMan.GetComponent<itemManager>().takeItem(gameObject, dest);
 		interacting = true;
-		pause();
 		StartCoroutine(WaitInteract());
 	}
 
