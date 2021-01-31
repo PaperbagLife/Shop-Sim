@@ -40,15 +40,16 @@ public class itemManager : MonoBehaviour
         
     }
 
-    public void takeItem(GameObject player, Vector2Int dest)
+    public GameObject takeItem(GameObject player, Vector2Int dest)
     {
-    	if(dest == Vector2Int.zero) return;
+    	if(dest == Vector2Int.zero) return new GameObject("hello");
     	Debug.Log("before itemID" + dest);
     	int itemID = blockID2ItemID[dest];
-    	if (itemTaken[itemID]) return;
+    	if (itemTaken[itemID]) return new GameObject("hello");
     	GameObject cur = ID2Item[itemID];
     	cur.GetComponent<itemFollow>().follow(player);
     	itemTaken[itemID] = true;
         player.GetComponent<playerMovement>().interactTarget = cur.GetComponent<RootMotion.FinalIK.InteractionObject>();
+        return cur;
     }
 }

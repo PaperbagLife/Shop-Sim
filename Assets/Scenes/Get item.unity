@@ -21669,7 +21669,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh14294
+  m_Name: pb_Mesh14846
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23157,6 +23157,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   following: 0
+  started: 0
+  ended: 0
+  moveSpeed: 0.1
 --- !u!114 &1079963808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23206,9 +23209,9 @@ MonoBehaviour:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 0.0017699599
-        inSlope: -2.8238902
-        outSlope: -2.8238902
+        value: 1.0009847
+        inSlope: 0.0027855267
+        outSlope: 0.0027855267
         tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334
@@ -27450,7 +27453,7 @@ PrefabInstance:
     - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.53
+      value: -1.65
       objectReference: {fileID: 0}
     - target: {fileID: 1438790814223874023, guid: 029a9f30e4b29d5469852f938279cdec,
         type: 3}
@@ -27499,6 +27502,11 @@ PrefabInstance:
       objectReference: {fileID: 2057128814}
     - target: {fileID: 8763052115685874171, guid: 029a9f30e4b29d5469852f938279cdec,
         type: 3}
+      propertyPath: effector
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763052115685874171, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
       propertyPath: playerID
       value: 0
       objectReference: {fileID: 0}
@@ -27511,6 +27519,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763052115685874173, guid: 029a9f30e4b29d5469852f938279cdec,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 029a9f30e4b29d5469852f938279cdec, type: 3}
@@ -30126,6 +30139,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   following: 0
+  started: 0
+  ended: 0
+  moveSpeed: 0.1
 --- !u!114 &1405217178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30175,9 +30191,9 @@ MonoBehaviour:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 0.0017699599
-        inSlope: -2.8238902
-        outSlope: -2.8238902
+        value: 1.0009847
+        inSlope: 0.0027855267
+        outSlope: 0.0027855267
         tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334
@@ -34635,7 +34651,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh15020
+  m_Name: pb_Mesh15620
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -44540,13 +44556,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057128813}
-  m_LocalRotation: {x: 0.46095893, y: -0.28159198, z: 0.13650614, w: 0.83041495}
-  m_LocalPosition: {x: 10.66, y: 11, z: -1.3}
+  m_LocalRotation: {x: 0.44083777, y: -0.4108239, z: 0.2229283, w: 0.7662825}
+  m_LocalPosition: {x: 1.04, y: 4.05, z: -0.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2040535186}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 57.4, y: -39.38, z: -3.5}
+  m_LocalEulerAnglesHint: {x: 59.18, y: -57.7, z: -2.3}
 --- !u!1001 &2059811579
 PrefabInstance:
   m_ObjectHideFlags: 0

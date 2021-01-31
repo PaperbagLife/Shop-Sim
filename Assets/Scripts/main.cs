@@ -119,7 +119,7 @@ public class main : MonoBehaviour
 		foreach (GameObject player in players)
 		{
 			agent = player.GetComponent<NavMeshAgent>();
-			if (agent.remainingDistance <= agent.stoppingDistance)
+			if (agent.remainingDistance <= agent.stoppingDistance && player.GetComponent<playerMovement>().finishedInteracting)
 			//Finished moving
 			{
 				Debug.Log("finsihed moving, from playerManager");

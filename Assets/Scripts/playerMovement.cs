@@ -23,9 +23,11 @@ public class playerMovement : MonoBehaviour
 	public RootMotion.FinalIK.FullBodyBipedEffector effector;
 	public RootMotion.FinalIK.InteractionObject interactTarget;
 	public bool interacting = false;
+	public bool finishedInteracting = true;
 	private Vector3 lastAgentVelocity;
 	private NavMeshPath lastAgentPath;
 	private Vector3 lastAgentDestination;
+
 
 	
 	Vector2Int destination;
@@ -103,16 +105,31 @@ public class playerMovement : MonoBehaviour
 		
 	private IEnumerator WaitInteract()
 	{
-		yield return new WaitForSeconds(2.0f);
+		yield return new WaitForSeconds(1.0f);
 		interacting = false;
-
+		finishedInteracting = true;
 	}
+
+	private IEnumerator WaitInteract2()
+	{
+		yield return new WaitForSeconds(1.0f);
+		interacting = true;
+		StartCoroutine(WaitInteract());
+	}
+
 	public void grabItem(Vector2Int dest)
 	{
-		itemMan.GetComponent<itemManager>().takeItem(gameObject, dest);
-		interacting = true;
+		GameObject item = itemMan.GetComponent<itemManager>().takeItem(gameObject, dest);
+		if (item.name == "hello") 
+		{
+			Destroy(item);
+			return;
+		}
+		finishedInteracting = false;
+		StartCoroutine(WaitInteract2());
 		gameObject.GetComponent<RootMotion.FinalIK.InteractionSystem>().StartInteraction(effector, interactTarget, false);
-		StartCoroutine(WaitInteract());
+		Vector3 loc = new Vector3(item.transform.position[0], 0, item.transform.position[2]);
+		agent.SetDestination((loc + gameObject.transform.position)/2);
 	}
 
 	public void updateLog(Vector3 curPos)
@@ -171,6 +188,7 @@ public class playerMovement : MonoBehaviour
 		List<Vector2Int> unvisited = new List<Vector2Int>();
 		Dictionary<int, bool> itemTaken = itemMan.GetComponent<itemManager>().itemTaken;
 		Dictionary<int, Vector2Int> itemID2blockID = itemMan.GetComponent<itemManager>().itemID2blockID;
+		Debug.Log("calling nextc");
 		foreach(var item in itemTaken)
 		{
 			if (item.Value == false) 
@@ -180,7 +198,7 @@ public class playerMovement : MonoBehaviour
 		}
 		if (unvisited.Count == 0)
 		{
-			Debug.Log("No unvisited tiles");
+			Debug.Log("no items left");
 			gameObject.GetComponent<Rigidbody>().isKinematic = true;
 			return true;
 		}
